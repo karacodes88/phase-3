@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Management System</title>
+</head>
+<body>
+<div align="center">
+  <h1>Product List</h1>
+  <table>
+    <thread>
+      <tr>
+        <th>User Id</th>
+        <th>Brand</th>
+        <th>Size</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Quantity</th>
+      </tr>
+    </thread>
+
+    <th:block th:each="product: ${listProducts}">
+
+      <tbody>
+
+      <td th:text="${product.id}"></td>
+
+      <td th:text="${product.brand}"></td>
+
+      <td th:text="${product.size}"></td>
+
+      <td th:text="${product.price}"></td>
+
+      <td th:text="${product.stock}"></td>
+
+      <td th:text="${product. quantity }"></td>
+
+    </th:block>
+
+
+  </table>
+</div>
+
+</body>
+</html>
