@@ -15,20 +15,10 @@ public class Products {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO )
-    private long id;
-
-
+    private Long id;
     private String brand;
-
-
     private String size;
-
-
     private double price;
-
-
-    private String stock;
-
-
+    private int stock;
     private int quantity;
 }
